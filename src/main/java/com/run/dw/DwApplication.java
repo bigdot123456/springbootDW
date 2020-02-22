@@ -12,7 +12,7 @@ import org.slf4j.LoggerFactory;
  * @author liqinghua
  */
 @SpringBootApplication
-@RestController
+// @RestController
 public class DwApplication {
     private static final Logger logger = LoggerFactory.getLogger(DwApplication.class);
 
@@ -23,7 +23,7 @@ public class DwApplication {
 
         SpringApplication.run(DwApplication.class, args);
     }
-    @RequestMapping(value = "/")
+    // @RequestMapping(value = "/")
     public String hello() {
         return "Hello World from Tomcat";
     }
